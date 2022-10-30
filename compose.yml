@@ -1,0 +1,9 @@
+version: '2.6'
+services:
+	apache:
+		image: http:latest
+		container_name: web_site
+		ports:
+		- '80:80'
+		volumes:
+		-./website:usr/local/apache2/htdocs
